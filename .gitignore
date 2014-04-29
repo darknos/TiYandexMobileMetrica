@@ -2,4 +2,5 @@ tmp
 bin
 build
 *.zip
-*.prefs
+DerivedData
+*.lock

@@ -1,0 +1,19 @@
+TITANIUM_SDK_VERSION = 3.2.2.GA
+
+
+//
+// THESE SHOULD BE OK GENERALLY AS-IS
+//
+TITANIUM_SDK = ~/Library/Application Support/Titanium/mobilesdk/osx/$(TITANIUM_SDK_VERSION)
+TITANIUM_BASE_SDK = "$(TITANIUM_SDK)/iphone/include"
+TITANIUM_BASE_SDK2 = "$(TITANIUM_SDK)/iphone/include/TiCore"
+HEADER_SEARCH_PATHS= $(TITANIUM_BASE_SDK) $(TITANIUM_BASE_SDK2)
+
+
+GCC_ENABLE_CPP_EXCEPTIONS = YES
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(TITANIUM_BASE_SDK) $(TITANIUM_BASE_SDK2) "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/FMDB" "${PODS_ROOT}/Headers/KSCrash" "${PODS_ROOT}/Headers/YandexMobileMetrica" "${PODS_ROOT}/Headers/protobuf-c" "${PODS_ROOT}/Headers/protobuf-c/google/protobuf-c" "${PODS_ROOT}/Headers"
+LIBRARY_SEARCH_PATHS = "$(PODS_ROOT)/YandexMobileMetrica/"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers" -isystem "${PODS_ROOT}/Headers/FMDB" -isystem "${PODS_ROOT}/Headers/KSCrash" -isystem "${PODS_ROOT}/Headers/YandexMobileMetrica" -isystem "${PODS_ROOT}/Headers/protobuf-c" -isystem "${PODS_ROOT}/Headers/protobuf-c/google/protobuf-c"
+OTHER_LDFLAGS = -lYandexMobileMetrica -lc++ -lsqlite3 -lz -framework CoreGraphics -framework CoreLocation -framework CoreTelephony -framework Foundation -framework Security -framework SystemConfiguration -framework UIKit
+PODS_ROOT = ${SRCROOT}/Pods

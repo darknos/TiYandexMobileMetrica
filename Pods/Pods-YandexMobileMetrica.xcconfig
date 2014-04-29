@@ -1,0 +1,3 @@
+PODS_YANDEXMOBILEMETRICA_HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers"
+PODS_YANDEXMOBILEMETRICA_LIBRARY_SEARCH_PATHS = "$(PODS_ROOT)/YandexMobileMetrica/"
+PODS_YANDEXMOBILEMETRICA_OTHER_LDFLAGS = -lYandexMobileMetrica -lsqlite3 -lz -framework CoreGraphics -framework CoreLocation -framework CoreTelephony -framework Foundation -framework Security -framework SystemConfiguration -framework UIKit

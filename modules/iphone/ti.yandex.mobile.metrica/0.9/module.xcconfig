@@ -1,0 +1,39 @@
+//
+// PLACE ANY BUILD DEFINITIONS IN THIS FILE AND THEY WILL BE 
+// PICKED UP DURING THE APP BUILD FOR YOUR MODULE
+//
+// see the following webpage for instructions on the settings
+// for this file:
+// http://developer.apple.com/mac/library/documentation/DeveloperTools/Conceptual/XcodeBuildSystem/400-Build_Configurations/build_configs.html
+// 
+
+//
+// How to add a Framework (example)
+//
+// OTHER_LDFLAGS=$(inherited) -framework Foo
+//
+// Adding a framework for a specific version(s) of iPhone:
+//
+// OTHER_LDFLAGS[sdk=iphoneos4*]=$(inherited) -framework Foo
+// OTHER_LDFLAGS[sdk=iphonesimulator4*]=$(inherited) -framework Foo
+//
+//
+// How to add a compiler define:
+//
+// OTHER_CFLAGS=$(inherited) -DFOO=1
+//
+//
+// IMPORTANT NOTE: always use $(inherited) in your overrides
+// 
+
+PODS_ROOT = ${SRCROOT}/Pods
+
+GCC_ENABLE_CPP_EXCEPTIONS = YES
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+
+HEADER_SEARCH_PATHS = $(TITANIUM_BASE_SDK) $(TITANIUM_BASE_SDK2) "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/FMDB" "${PODS_ROOT}/Headers/KSCrash" "${PODS_ROOT}/Headers/YandexMobileMetrica" "${PODS_ROOT}/Headers/protobuf-c" "${PODS_ROOT}/Headers/protobuf-c/google/protobuf-c" "${PODS_ROOT}/Headers"
+
+LIBRARY_SEARCH_PATHS = "$(PODS_ROOT)/YandexMobileMetrica/"
+
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers" -isystem "${PODS_ROOT}/Headers/FMDB" -isystem "${PODS_ROOT}/Headers/KSCrash" -isystem "${PODS_ROOT}/Headers/YandexMobileMetrica" -isystem "${PODS_ROOT}/Headers/protobuf-c" -isystem "${PODS_ROOT}/Headers/protobuf-c/google/protobuf-c"
+OTHER_LDFLAGS = $(inherited) -lYandexMobileMetrica -lc++ -lsqlite3 -lz -framework CoreGraphics -framework CoreLocation -framework CoreTelephony -framework Foundation -framework Security -framework SystemConfiguration -framework UIKit

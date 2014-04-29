@@ -159,7 +159,7 @@ def zip_dir(zf,dir,basepath,ignoreExt=[]):
 
 def glob_libfiles():
 	files = []
-	for libfile in glob.glob('build/**/*.a'):
+	for libfile in glob.glob('build/Products/**/libTiYandexMobileMetrica.a'):
 		if libfile.find('Release-')!=-1:
 			files.append(libfile)
 	return files
@@ -167,11 +167,13 @@ def glob_libfiles():
 def build_module(manifest,config):
 	from tools import ensure_dev_path
 	ensure_dev_path()
-
-	rc = os.system("xcodebuild -sdk iphoneos -configuration Release")
+#xcodebuild -sdk iphoneos -configuration Release -workspace TiYandexMobileMetrica.xcworkspace -scheme TiYandexMobileMetrica
+	rc = os.system("xcodebuild -sdk iphoneos -configuration Release -workspace TiYandexMobileMetrica.xcworkspace -scheme TiYandexMobileMetrica")
+	#rc = os.system("xcodebuild -sdk iphoneos -configuration Release")
 	if rc != 0:
 		die("xcodebuild failed")
-	rc = os.system("xcodebuild -sdk iphonesimulator -configuration Release")
+	#rc = os.system("xcodebuild -sdk iphonesimulator -configuration Release")
+	rc = os.system("xcodebuild -sdk iphonesimulator -configuration Release -workspace TiYandexMobileMetrica.xcworkspace -scheme TiYandexMobileMetrica")
 	if rc != 0:
 		die("xcodebuild failed")
     # build the merged library using lipo
@@ -180,6 +182,7 @@ def build_module(manifest,config):
 	for libfile in glob_libfiles():
 		libpaths+='%s ' % libfile
 
+	print("lipo %s -create -output build/lib%s.a" %(libpaths,moduleid));
 	os.system("lipo %s -create -output build/lib%s.a" %(libpaths,moduleid))
 	
 def generate_apidoc(apidoc_build_path):

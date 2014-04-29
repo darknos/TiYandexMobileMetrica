@@ -1,0 +1,6 @@
+#include "Pods-YandexMobileMetrica.xcconfig"
+GCC_PREPROCESSOR_DEFINITIONS = COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/BuildHeaders" "${PODS_ROOT}/BuildHeaders/YandexMobileMetrica" "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/FMDB" "${PODS_ROOT}/Headers/KSCrash" "${PODS_ROOT}/Headers/YandexMobileMetrica" "${PODS_ROOT}/Headers/protobuf-c" "${PODS_ROOT}/Headers/protobuf-c/google/protobuf-c" ${PODS_YANDEXMOBILEMETRICA_HEADER_SEARCH_PATHS}
+LIBRARY_SEARCH_PATHS = ${PODS_YANDEXMOBILEMETRICA_LIBRARY_SEARCH_PATHS}
+OTHER_LDFLAGS = -ObjC ${PODS_YANDEXMOBILEMETRICA_OTHER_LDFLAGS}
+PODS_ROOT = ${SRCROOT}

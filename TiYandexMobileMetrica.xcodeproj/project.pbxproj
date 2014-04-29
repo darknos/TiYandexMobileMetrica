@@ -26,10 +26,8 @@
 		24DD6CFA1134B3F500162E58 /* TiYandexMobileMetricaModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DD6CF81134B3F500162E58 /* TiYandexMobileMetricaModule.m */; };
 		24DE9E1111C5FE74003F90F6 /* TiYandexMobileMetricaModuleAssets.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DE9E0F11C5FE74003F90F6 /* TiYandexMobileMetricaModuleAssets.h */; };
 		24DE9E1211C5FE74003F90F6 /* TiYandexMobileMetricaModuleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DE9E1011C5FE74003F90F6 /* TiYandexMobileMetricaModuleAssets.m */; };
-		84D2DBEC190EB22F00313DDD /* libYandexMobileMetrica.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D2DBE4190EB22F00313DDD /* libYandexMobileMetrica.a */; };
-		84D2DBED190EB22F00313DDD /* YandexMobileMetrica.h in Headers */ = {isa = PBXBuildFile; fileRef = 84D2DBE8190EB22F00313DDD /* YandexMobileMetrica.h */; };
-		84D2DBEE190EB22F00313DDD /* YMMCounter.h in Headers */ = {isa = PBXBuildFile; fileRef = 84D2DBE9190EB22F00313DDD /* YMMCounter.h */; };
-		84D2DBEF190EB22F00313DDD /* YMMVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = 84D2DBEA190EB22F00313DDD /* YMMVersion.h */; };
+		8439D479191015E200A95ACC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8439D478191015E200A95ACC /* libPods.a */; settings = {ATTRIBUTES = (Required, ); }; };
+		8439D47B19101B8900A95ACC /* libYandexMobileMetrica.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8439D47A19101B8900A95ACC /* libYandexMobileMetrica.a */; };
 		AA747D9F0F9514B9006C5449 /* TiYandexMobileMetrica_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* TiYandexMobileMetrica_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -50,16 +48,16 @@
 		24DD6D1B1134B66800162E58 /* titanium.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = titanium.xcconfig; sourceTree = "<group>"; };
 		24DE9E0F11C5FE74003F90F6 /* TiYandexMobileMetricaModuleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiYandexMobileMetricaModuleAssets.h; path = Classes/TiYandexMobileMetricaModuleAssets.h; sourceTree = "<group>"; };
 		24DE9E1011C5FE74003F90F6 /* TiYandexMobileMetricaModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiYandexMobileMetricaModuleAssets.m; path = Classes/TiYandexMobileMetricaModuleAssets.m; sourceTree = "<group>"; };
-		84D2DBE4190EB22F00313DDD /* libYandexMobileMetrica.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libYandexMobileMetrica.a; sourceTree = "<group>"; };
-		84D2DBE5190EB22F00313DDD /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
-		84D2DBE6190EB22F00313DDD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		84D2DBE8190EB22F00313DDD /* YandexMobileMetrica.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YandexMobileMetrica.h; sourceTree = "<group>"; };
-		84D2DBE9190EB22F00313DDD /* YMMCounter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMMCounter.h; sourceTree = "<group>"; };
-		84D2DBEA190EB22F00313DDD /* YMMVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMMVersion.h; sourceTree = "<group>"; };
-		84D2DBEB190EB22F00313DDD /* YandexMobileMetrica.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = YandexMobileMetrica.podspec; sourceTree = "<group>"; };
+		8439D4701910142800A95ACC /* libPods-FMDB.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-FMDB.a"; path = "Pods/build/Debug-iphoneos/libPods-FMDB.a"; sourceTree = "<group>"; };
+		8439D4711910142800A95ACC /* libPods-KSCrash.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-KSCrash.a"; path = "Pods/build/Debug-iphoneos/libPods-KSCrash.a"; sourceTree = "<group>"; };
+		8439D4721910142800A95ACC /* libPods-protobuf-c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-protobuf-c.a"; path = "Pods/build/Debug-iphoneos/libPods-protobuf-c.a"; sourceTree = "<group>"; };
+		8439D4731910142800A95ACC /* libPods-YandexMobileMetrica.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-YandexMobileMetrica.a"; path = "Pods/build/Debug-iphoneos/libPods-YandexMobileMetrica.a"; sourceTree = "<group>"; };
+		8439D478191015E200A95ACC /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
+		8439D47A19101B8900A95ACC /* libYandexMobileMetrica.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libYandexMobileMetrica.a; sourceTree = "<group>"; };
 		AA747D9E0F9514B9006C5449 /* TiYandexMobileMetrica_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiYandexMobileMetrica_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libTiYandexMobileMetrica.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTiYandexMobileMetrica.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5A701F0C4E7484080242913 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84D2DBEC190EB22F00313DDD /* libYandexMobileMetrica.a in Frameworks */,
+				8439D47B19101B8900A95ACC /* libYandexMobileMetrica.a in Frameworks */,
+				8439D479191015E200A95ACC /* libPods.a in Frameworks */,
 				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,11 +85,11 @@
 		0867D691FE84028FC02AAC07 /* TiYandexMobileMetrica */ = {
 			isa = PBXGroup;
 			children = (
-				84D2DBE3190EB22F00313DDD /* metrica-sdk */,
 				08FB77AEFE84172EC02AAC07 /* Classes */,
 				32C88DFF0371C24200C91783 /* Other Sources */,
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
 				034768DFFF38A50411DB9C8B /* Products */,
+				F5A701F0C4E7484080242913 /* Pods.xcconfig */,
 			);
 			name = TiYandexMobileMetrica;
 			sourceTree = "<group>";
@@ -98,6 +97,12 @@
 		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8439D47A19101B8900A95ACC /* libYandexMobileMetrica.a */,
+				8439D478191015E200A95ACC /* libPods.a */,
+				8439D4701910142800A95ACC /* libPods-FMDB.a */,
+				8439D4711910142800A95ACC /* libPods-KSCrash.a */,
+				8439D4721910142800A95ACC /* libPods-protobuf-c.a */,
+				8439D4731910142800A95ACC /* libPods-YandexMobileMetrica.a */,
 				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -123,28 +128,6 @@
 			name = "Other Sources";
 			sourceTree = "<group>";
 		};
-		84D2DBE3190EB22F00313DDD /* metrica-sdk */ = {
-			isa = PBXGroup;
-			children = (
-				84D2DBE4190EB22F00313DDD /* libYandexMobileMetrica.a */,
-				84D2DBE5190EB22F00313DDD /* LICENSE.txt */,
-				84D2DBE6190EB22F00313DDD /* README.md */,
-				84D2DBE7190EB22F00313DDD /* YandexMobileMetrica */,
-				84D2DBEB190EB22F00313DDD /* YandexMobileMetrica.podspec */,
-			);
-			path = "metrica-sdk";
-			sourceTree = "<group>";
-		};
-		84D2DBE7190EB22F00313DDD /* YandexMobileMetrica */ = {
-			isa = PBXGroup;
-			children = (
-				84D2DBE8190EB22F00313DDD /* YandexMobileMetrica.h */,
-				84D2DBE9190EB22F00313DDD /* YMMCounter.h */,
-				84D2DBEA190EB22F00313DDD /* YMMVersion.h */,
-			);
-			path = YandexMobileMetrica;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -153,10 +136,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA747D9F0F9514B9006C5449 /* TiYandexMobileMetrica_Prefix.pch in Headers */,
-				84D2DBEF190EB22F00313DDD /* YMMVersion.h in Headers */,
-				84D2DBED190EB22F00313DDD /* YandexMobileMetrica.h in Headers */,
 				24DD6CF91134B3F500162E58 /* TiYandexMobileMetricaModule.h in Headers */,
-				84D2DBEE190EB22F00313DDD /* YMMCounter.h in Headers */,
 				24DE9E1111C5FE74003F90F6 /* TiYandexMobileMetricaModuleAssets.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -168,9 +148,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "TiYandexMobileMetrica" */;
 			buildPhases = (
+				F17CF0ACCB274CC39D7ED550 /* Check Pods Manifest.lock */,
 				D2AAC07A0554694100DB518D /* Headers */,
 				D2AAC07B0554694100DB518D /* Sources */,
 				D2AAC07C0554694100DB518D /* Frameworks */,
+				BAFEA325D4994C96B0AAC5F0 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -223,6 +205,36 @@
 			shellPath = /bin/sh;
 			shellScript = "# shell script goes here\n\npython \"${TITANIUM_SDK}/titanium.py\" run --dir=\"${PROJECT_DIR}\"\nexit $?\n";
 		};
+		BAFEA325D4994C96B0AAC5F0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F17CF0ACCB274CC39D7ED550 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -248,7 +260,7 @@
 /* Begin XCBuildConfiguration section */
 		1DEB921F08733DC00010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			baseConfigurationReference = F5A701F0C4E7484080242913 /* Pods.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -269,7 +281,10 @@
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				INSTALL_PATH = /usr/local/lib;
-				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/metrica-sdk";
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+					"$(PROJECT_DIR)",
+				);
 				OTHER_CFLAGS = (
 					"-DDEBUG",
 					"-DTI_POST_1_2",
@@ -286,7 +301,7 @@
 		};
 		1DEB922008733DC00010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			baseConfigurationReference = F5A701F0C4E7484080242913 /* Pods.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DSTROOT = /tmp/TiYandexMobileMetrica.dst;
@@ -307,7 +322,10 @@
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				INSTALL_PATH = /usr/local/lib;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/metrica-sdk";
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+					"$(PROJECT_DIR)",
+				);
 				OTHER_CFLAGS = "-DTI_POST_1_2";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = TiYandexMobileMetrica;
@@ -319,7 +337,7 @@
 		};
 		1DEB922308733DC00010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			baseConfigurationReference = F5A701F0C4E7484080242913 /* Pods.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -340,6 +358,7 @@
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = (
 					"-DDEBUG",
 					"-DTI_POST_1_2",
@@ -356,7 +375,7 @@
 		};
 		1DEB922408733DC00010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			baseConfigurationReference = F5A701F0C4E7484080242913 /* Pods.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DSTROOT = /tmp/TiYandexMobileMetrica.dst;
@@ -376,7 +395,7 @@
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				INSTALL_PATH = /usr/local/lib;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DTI_POST_1_2";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = TiYandexMobileMetrica;
