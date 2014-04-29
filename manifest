@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 0.9
+apiversion: 2
+description: My module
+author: Sergey Nosenko
+license: MIT
+copyright: Sergey Nosenko
+
+
+# these should not be edited
+name: TiYandexMobileMetrica
+moduleid: ti.yandex.mobile.metrica
+guid: 4bac0d14-887c-4478-b774-bd2207155eb1
+platform: iphone
+minsdk: 3.2.2.GA
